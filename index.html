@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Transactions</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <div class="header text-center m-5">
+        <h1>Customer Transaction Dashboard</h1>
+    </div>
+
+    <div class="data">
+        <div class="container">
+            <form class="d-flex p-3" role="search">
+                <input class="form-control me-2"  id="filter-input" type="search" placeholder="Filter by name" aria-label="Search">
+                <input class="form-control me-2" id="filter-input-amount" type="search" placeholder="Filter by amount" aria-label="Search">
+
+            </form>
+
+            <table id="customer-table">
+                <thead>
+                    <tr >
+                        <th>Name</th>
+                        <th>Transactions Date</th>
+                        <th>Total Transactions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <canvas id="transaction-chart" width="400" height="200"></canvas>
+    <script src="assets/js/app.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

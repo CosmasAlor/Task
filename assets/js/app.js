@@ -8,7 +8,7 @@ $(document).ready(function() {
     const fetchData = async () => {
         try {
             // Fetch customers and transactions data from the API
-            const customersResponse = await $.get('http://localhost:8000/customers');
+            const customersResponse = await $.get('https://cosmasalor.github.io/Task/db.json');
             const transactionsResponse = await $.get('http://localhost:8000/transactions');
             customers = customersResponse;  // Assign fetched customers data to the customers array
             transactions = transactionsResponse;  // Assign fetched transactions data to the transactions array
